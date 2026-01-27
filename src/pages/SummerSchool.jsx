@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import Overview from '../components/springSchool/Overview'
-import Program from '../components/springSchool/Program'
-import PracticalInfo from '../components/springSchool/PracticalInfo'
-import Application from '../components/springSchool/Application'
+import Overview from '../components/SchoolAgenda/Overview'
+import Program from '../components/SchoolAgenda/Program'
+import PracticalInfo from '../components/SchoolAgenda/PracticalInfo'
+import Application from '../components/SchoolAgenda/Application'
 
-function SpringSchool() {
+function SummerSchool() {
   const location = useLocation()
   const [activeTab, setActiveTab] = useState('overview')
 
@@ -36,7 +36,7 @@ function SpringSchool() {
               </span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-900 dark:text-gray-300 font-bold leading-relaxed max-w-3xl mx-auto">
-              Spring School 2026
+              Summer School 2026
             </p>
           </div>
 
@@ -68,4 +68,4 @@ function SpringSchool() {
   )
 }
 
-export default SpringSchool
+export default SummerSchool

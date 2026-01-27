@@ -19,8 +19,8 @@ function Overview() {
             <div className="w-full lg:w-[512px]">
               <div className="flex flex-col items-center text-center space-y-6">
                 <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                  The 1st Model-Based Neuroscience and Cognition Spring School,
-                  hosted by the University of Amsterdam, will be held in Spring
+                  The 12th Model-Based Neuroscience and Cognition Summer School,
+                  hosted by the University of Amsterdam, will be held in Summer
                   2026!
                 </p>
                 <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -28,7 +28,7 @@ function Overview() {
                   Model-Based Neuroscience and Cognition Summer School. There is
                   no fixed application deadline; applications will remain open
                   until all spots are filled, provided the applicant's profile
-                  aligns with the theme of the spring school.
+                  aligns with the theme of the Summer school.
                 </p>
               </div>
             </div>

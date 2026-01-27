@@ -17,7 +17,7 @@ function Application() {
                   </span>
                 </h2>
                 <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                  The registration fee for the Spring School is €550.
+                  The registration fee for the Summer School is €550.
                   Participants should make their own housing arrangements. Space
                   is limited, so we ask participants to provide a statement of
                   interest.
@@ -49,7 +49,7 @@ function Application() {
                     <strong className="text-gray-900 dark:text-white">
                       Selection:
                     </strong>{' '}
-                    Based on relevance of Spring School to your research
+                    Based on relevance of Summer School to your research
                   </p>
                 </div>
               </div>
@@ -102,7 +102,7 @@ function Application() {
                   Submit your application through our online form
                 </p>
                 <a
-                  href="https://forms.gle/X7ZCjwmMqqLVjAYr5"
+                  href="https://forms.gle/Uh1AM8egnrxyjFZ59"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold px-8 py-4 rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
@@ -127,10 +127,10 @@ function Application() {
                 contact us:
               </p>
               <a
-                href="mailto:info.modelbasedneuroscience@gmail.com"
+                href="mailto:imcnsummerschool26@gmail.com"
                 className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
               >
-                info.modelbasedneuroscience@gmail.com
+                imcnsummerschool26@gmail.com
               </a>
             </div>
           </div>

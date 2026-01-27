@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import logo from '../assets/logo.png'
@@ -7,6 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
   const location = useLocation()
+  const scrollPositionRef = useRef(0)
 
   // Close menu when route changes
   useEffect(() => {
@@ -19,6 +20,33 @@ const Header = () => {
     if (darkMode) root.classList.add('dark')
     else root.classList.remove('dark')
   }, [darkMode])
+
+  // Store scroll position when menu opens
+  useEffect(() => {
+    if (isMenuOpen) {
+      scrollPositionRef.current = window.scrollY
+    }
+  }, [isMenuOpen])
+
+  // Close menu when scrolling with threshold
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isMenuOpen) {
+        const currentScroll = window.scrollY
+        const scrollDifference = Math.abs(
+          currentScroll - scrollPositionRef.current
+        )
+
+        // Only close if scrolled more than 50 pixels
+        if (scrollDifference > 50) {
+          setIsMenuOpen(false)
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [isMenuOpen])
 
   return (
     <header className="w-full bg-gray-900 dark:bg-gray-800 shadow-sm sticky top-0 z-50 transition-colors">
@@ -84,7 +112,8 @@ const navItems = [
   { to: '/code-and-data', label: 'Code & Data' },
   { to: '/app', label: 'App' },
   { to: '/contact', label: 'Contact' },
-  { to: '/spring-school', label: 'Spring School' },
+  // { to: '/spring-school', label: 'Spring School' },
+  { to: '/meeting', label: 'Meeting' },
 ]
 
 const Navigation = () => (
@@ -124,7 +153,7 @@ const MobileNavigation = ({ closeMenu }) => (
           key={item.to}
           to={item.to}
           onClick={closeMenu}
-          className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors px-2 py-2 rounded"
+          className="text-white dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors px-2 py-2 rounded"
         >
           {item.label}
         </Link>

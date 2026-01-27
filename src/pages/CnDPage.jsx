@@ -6,12 +6,12 @@ const Card = ({ site }) => {
   return (
     <div className="group bg-white dark:bg-gray-800 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 hover:-translate-y-2 flex flex-col h-full">
       {/* Image Section */}
-      <div className="relative w-full h-56 bg-gradient-to-br from-purple-600 to-blue-600 overflow-hidden flex-shrink-0">
+      <div className="relative w-full h-56 bg-gradient-to-br from-blue-500 to-purple-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden flex-shrink-0">
         {site.image ? (
           <img
             src={site.image}
             alt={site.name}
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-white text-4xl font-bold bg-white/20 backdrop-blur-sm">
@@ -98,7 +98,7 @@ const Card = ({ site }) => {
                 style={{
                   gridTemplateColumns: `repeat(${Math.min(
                     site.secondaryLinks.length,
-                    4
+                    4,
                   )}, 1fr)`,
                 }}
               >
@@ -159,7 +159,7 @@ const CnDPage = () => {
       name: 'GitHub',
       introduction:
         'On our shared Github account you can find the codes for different projects.',
-      image: 'images/github.png',
+      image: 'images/code&data/github.png',
       showBadge: true,
       badgeText: 'CODE',
       badgeColor: 'bg-blue-400',
@@ -177,7 +177,7 @@ const CnDPage = () => {
       name: 'Nighres',
       introduction:
         'Nighres is a Python package for processing of high-resolution neuroimaging data. It developed out of CBS High-Res Brain Processing Tools and aims to make those tools easier to install, use and extend. Nighres now includes new functions from the IMCN imaging toolkit.',
-      image: 'images/nighres.png',
+      image: 'images/code&data/nighres.png',
       showBadge: true,
       badgeText: 'PYTHON',
       badgeColor: 'bg-yellow-400',
@@ -193,8 +193,8 @@ const CnDPage = () => {
     {
       name: 'MASSP 2.0',
       introduction:
-        'MASSP is a multi-contrast anatomical subcortical structure parcellation method that uses a large set of manually labeled structures as priors to automatically label 17 subcortical structures in new subjects. The method uses a Bayesian multi-object approach combining shape priors, intensity distribution models, spatial relationships and global constraints to provide robust and accurate parcellations.',
-      image: 'images/massp.png',
+        'MASSP2.0 is an updated version of the multi-contrast anatomical subcortical structure parcellation method. MASSP2.0 is able to automatically label 35 subcortical structures in new subjects. As in the first version, the method uses a Bayesian multi-object approach combining shape priors, intensity distribution models, spatial relationships and global constraints to provide robust and accurate parcellations.',
+      image: 'images/code&data/massp2.png',
       showBadge: true,
       badgeText: 'ATLAS',
       badgeColor: 'bg-purple-400',
@@ -229,7 +229,7 @@ const CnDPage = () => {
       name: 'AHEAD',
       introduction:
         'The Amsterdam Ultra-high field adult lifespan database (AHEAD) is a collection of multi-contrast 7T MRI data from 105 healthy adults across the lifespan (18-80 years). The dataset includes high-resolution anatomical scans (MP2RAGE, T2*-weighted, and FLAIR) along with demographic and cognitive data, making it a valuable resource for studying brain structure and function across aging.',
-      image: 'images/ahead.png',
+      image: 'images/code&data/ahead.png',
       showBadge: true,
       badgeText: 'DATASET',
       badgeColor: 'bg-red-400',
@@ -237,11 +237,7 @@ const CnDPage = () => {
       primaryLinks: [
         {
           label: 'AHEAD Dataset',
-          url: 'https://doi.org/10.21942/uva.12152375.v2',
-        },
-        {
-          label: 'AHEAD Cognitive Data',
-          url: 'https://doi.org/10.21942/uva.12152378.v2',
+          url: 'https://figshare.com/articles/dataset/The_Amsterdam_Ultra-high_field_adult_lifespan_database_AHEAD_A_freely_available_multimodal_7_Tesla_submillimeter_magnetic_resonance_imaging_database/10007840',
         },
       ],
     },
@@ -249,7 +245,7 @@ const CnDPage = () => {
       name: 'MASSP',
       introduction:
         'MASSP is a multi-contrast anatomical subcortical structure parcellation method that uses a large set of manually labeled structures as priors to automatically label 17 subcortical structures in new subjects. The method uses a Bayesian multi-object approach combining shape priors, intensity distribution models, spatial relationships and global constraints to provide robust and accurate parcellations.',
-      image: 'images/massp.png',
+      image: 'images/code&data/massp.jpg',
       showBadge: true,
       badgeText: 'ATLAS',
       badgeColor: 'bg-purple-400',
@@ -276,7 +272,7 @@ const CnDPage = () => {
       name: 'CBS Tools',
       introduction:
         'The CBS High-Res Brain Processing Tools provide a fully automated processing pipeline for cortical analysis of structural MR images at a resolution of up to 400 micrometers, including skull stripping, whole brain segmentation, cortical extraction, surface inflation and mapping, as well as dedicated tools for profile estimation across the cortical thickness.',
-      image: 'images/cbs.png',
+      image: 'images/code&data/cbs.png',
       showBadge: true,
       badgeText: 'PIPELINE',
       badgeColor: 'bg-green-400',
@@ -316,7 +312,7 @@ const CnDPage = () => {
       name: 'MIST',
       introduction:
         'MIST (Multimodal Image Segmentation Tool) is a flexible tool for subcortical segmentation. It differs from FIRST in that it can use complementary information in different MRI modalities and is less reliant on manual segmentations.',
-      image: 'images/mist.png',
+      image: 'images/code&data/mist.png',
       showBadge: true,
       badgeText: 'Superseded by AHEAD',
       badgeColor: 'bg-red-500',
