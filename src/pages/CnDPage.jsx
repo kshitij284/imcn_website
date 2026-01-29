@@ -268,21 +268,7 @@ const CnDPage = () => {
         },
       ],
     },
-    {
-      name: 'CBS Tools',
-      introduction:
-        'The CBS High-Res Brain Processing Tools provide a fully automated processing pipeline for cortical analysis of structural MR images at a resolution of up to 400 micrometers, including skull stripping, whole brain segmentation, cortical extraction, surface inflation and mapping, as well as dedicated tools for profile estimation across the cortical thickness.',
-      image: 'images/code&data/cbs.png',
-      showBadge: true,
-      badgeText: 'PIPELINE',
-      badgeColor: 'bg-green-400',
-      primaryLinks: [
-        {
-          label: 'NITRC Project',
-          url: 'https://www.nitrc.org/projects/cbs-tools/',
-        },
-      ],
-    },
+
     {
       name: 'IMCN Imaging Toolkit',
       introduction:
@@ -314,7 +300,7 @@ const CnDPage = () => {
         'MIST (Multimodal Image Segmentation Tool) is a flexible tool for subcortical segmentation. It differs from FIRST in that it can use complementary information in different MRI modalities and is less reliant on manual segmentations.',
       image: 'images/code&data/mist.png',
       showBadge: true,
-      badgeText: 'Superseded by AHEAD',
+      badgeText: 'Superseded by MASSP',
       badgeColor: 'bg-red-500',
       primaryLinks: [
         {

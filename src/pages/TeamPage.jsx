@@ -125,7 +125,7 @@ const TeamPage = () => {
       id: 2,
       name: 'Anneke Alkemade',
       introduction:
-        'I am an assistant professor and have a background in human neuroanatomy, specialising in the subcortex. My work is focused on providing neuroanatomical information that will help improve our understanding of the role of deep brain structures in behaviour. To this end, I study both living and post mortem brains using ultra-high field qMRI and various microscopic techniques.',
+        'I am an assistant professor and have a background in human neuroanatomy, specialising in the subcortex. My work is focused on providing neuroanatomical information that will help improve our understanding of the role of deep brain structures in behaviour. To this end, I study both living and post mortem brains using ultra-high field qMRI and various microscopy techniques.',
       avatar: 'AA',
       photo: '/images/team/anneke-alkemade.jpg',
     },
@@ -143,15 +143,6 @@ const TeamPage = () => {
   const teamMembers = [
     {
       id: 4,
-      name: 'Pilou Bazin',
-      designation: 'Senior Scientist',
-      introduction:
-        'I am a senior scientist focussing on neuroimaging of the subcortex. My work combines ultra-high field magnetic resonance imaging with computational neuroanatomy in order to better understand the interplay of structure, connectivity and physiology of the subcortex in shaping human behavior.',
-      avatar: 'PB',
-      photo: '/images/team/Pilou.jpg',
-    },
-    {
-      id: 5,
       name: 'Lysanne Groenewegen',
       designation: 'PhD Student',
       introduction:
@@ -160,7 +151,7 @@ const TeamPage = () => {
       photo: '/images/team/Lysanne.jpg',
     },
     {
-      id: 6,
+      id: 5,
       name: 'Ettore Cerracchio',
       designation: 'PhD Student',
       introduction:
@@ -169,7 +160,7 @@ const TeamPage = () => {
       photo: '/images/team/Ettore.png',
     },
     {
-      id: 7,
+      id: 6,
       name: 'Rawien Balesar',
       designation: 'Technical Assistant',
       introduction:
