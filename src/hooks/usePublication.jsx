@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import { asset } from '../utils/assets' 
 /**
  * Parse a CSV line properly handling quoted fields with commas
  */
@@ -68,7 +68,7 @@ export const usePublications = () => {
       setError(null)
 
       const response = await fetch(
-        '/publications.csv?t=' + new Date().getTime(),
+        asset('/publications.csv') + '?t=' + new Date().getTime(),
       )
       if (!response.ok) {
         throw new Error('Publications file not found.')

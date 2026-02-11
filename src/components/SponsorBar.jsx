@@ -1,24 +1,26 @@
+import { asset } from '../utils/assets' 
+
 function SponsorBar() {
   const sponsors = [
     {
       name: 'European Research Council',
       url: 'https://erc.europa.eu/',
-      logo: '/images/logos/ERC.png',
+      logo: asset('/images/logos/ERC.png'),
     },
     {
       name: 'Netherlands Organisation for Scientific Research',
       url: 'https://www.nwo.nl/',
-      logo: '/images/logos/NWO.png',
+      logo: asset('/images/logos/NWO.png'),
     },
     {
       name: 'Hersenstichting',
       url: 'https://www.hersenstichting.nl/',
-      logo: '/images/logos/HSN.png',
+      logo: asset('/images/logos/HSN.png'),
     },
     {
       name: 'ParkinsonFonds',
       url: 'https://www.parkinsonfonds.nl/',
-      logo: '/images/logos/parkinson.svg',
+      logo: asset('/images/logos/parkinson.svg'),
     },
   ]
 

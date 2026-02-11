@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { asset } from '../utils/assets'
 
 const VennDiagram = ({ isExpanded, onCircleClick }) => {
   const [isHovered, setIsHovered] = useState(false)
@@ -29,19 +30,19 @@ const VennDiagram = ({ isExpanded, onCircleClick }) => {
       cx: isExpansionActive ? 150 : 255,
       cy: isExpansionActive ? 120 : 220,
       r: 60,
-      image: '/images/A.jpg',
+      image: asset('images/A.jpg'),
     },
     B: {
       cx: isExpansionActive ? 450 : 345,
       cy: isExpansionActive ? 120 : 220,
       r: 60,
-      image: '/images/B.jpg',
+      image: asset('images/B.jpg'),
     },
     C: {
       cx: isExpansionActive ? 300 : 300,
       cy: isExpansionActive ? 400 : 300,
       r: 60,
-      image: '/images/C.jpg',
+      image: asset('images/C.jpg'),
     },
   }
 
@@ -52,7 +53,7 @@ const VennDiagram = ({ isExpanded, onCircleClick }) => {
     cx: centerX,
     cy: centerY,
     r: 40,
-    image: '/images/Center.jpg',
+    image: asset('images/Center.jpg'),
   }
 
   const arrows = [
@@ -291,6 +292,7 @@ const VennDiagram = ({ isExpanded, onCircleClick }) => {
         y={circles.A.cy - circles.A.r}
         height={circles.A.r * 2}
         width={circles.A.r * 2}
+        preserveAspectRatio="xMidYMid slice"
         className="transition-all duration-900 ease-in-out"
         style={{
           opacity: showImages ? 1 : 0,
@@ -303,6 +305,7 @@ const VennDiagram = ({ isExpanded, onCircleClick }) => {
         y={circles.B.cy - circles.B.r}
         height={circles.B.r * 2}
         width={circles.B.r * 2}
+        preserveAspectRatio="xMidYMid slice"
         className="transition-all duration-900 ease-in-out"
         style={{
           opacity: showImages ? 1 : 0,
@@ -315,6 +318,7 @@ const VennDiagram = ({ isExpanded, onCircleClick }) => {
         y={circles.C.cy - circles.C.r}
         height={circles.C.r * 2}
         width={circles.C.r * 2}
+        preserveAspectRatio="xMidYMid slice"
         className="transition-all duration-900 ease-in-out"
         style={{
           opacity: showImages ? 1 : 0,
@@ -328,6 +332,7 @@ const VennDiagram = ({ isExpanded, onCircleClick }) => {
         y={circles.Center.cy - circles.Center.r}
         height={circles.Center.r * 2}
         width={circles.Center.r * 2}
+        preserveAspectRatio="xMidYMid slice"
         className="transition-all duration-900 ease-in-out"
         style={{
           opacity: showImages && isExpansionActive ? 1 : 0,

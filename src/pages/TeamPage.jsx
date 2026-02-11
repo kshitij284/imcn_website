@@ -1,6 +1,8 @@
 import React from 'react'
 import PageHeader from '../components/PageHeader'
 import SectionHeader from '../components/SectionHeader'
+import { asset } from '../utils/assets' 
+
 
 const LeadershipCard = ({ member }) => {
   return (
@@ -119,7 +121,7 @@ const TeamPage = () => {
       introduction:
         'I am a Full Professor of cognitive neuroscience at the University of Amsterdam (UvA), Professor for Neuroscientific Testing of Psychological Models at Leiden University, and honorary group leader of the integrative model-based cognitive neuroscience (IMCN) group at the Netherlands Institute for Neuroscience, The Netherlands. I received my Ph.D. in 2006 at the Max Planck Institute for Human Cognitive and Brain Sciences, Leipzig, Germany. My main research interest is in model-based cognitive neuroscience.',
       avatar: 'BF',
-      photo: '/images/team/birte-fortsmann.jpg',
+      photo: asset('/images/team/birte-fortsmann.jpg'),
     },
     {
       id: 2,
@@ -127,7 +129,7 @@ const TeamPage = () => {
       introduction:
         'I am an assistant professor and have a background in human neuroanatomy, specialising in the subcortex. My work is focused on providing neuroanatomical information that will help improve our understanding of the role of deep brain structures in behaviour. To this end, I study both living and post mortem brains using ultra-high field qMRI and various microscopy techniques.',
       avatar: 'AA',
-      photo: '/images/team/anneke-alkemade.jpg',
+      photo: asset('/images/team/anneke-alkemade.jpg'),
     },
     {
       id: 3,
@@ -135,7 +137,7 @@ const TeamPage = () => {
       introduction:
         'I am an assistant professor at Leiden University and senior scientist at the University of Amsterdam. My research focuses on the temporal dynamics of the mind and brain: How and why do we change while we engage in decision-making tasks. These dynamics occur on multiple timescales, and give crucial insight in the structure of the mind as well as its neural underpinnings, with a focus on the deep brain',
       avatar: 'SM',
-      photo: '/images/team/steven-miletic.png',
+      photo: asset('/images/team/steven-miletic.png'),
     },
   ]
 
@@ -148,7 +150,7 @@ const TeamPage = () => {
       introduction:
         'I am a PhD student supervised by Anneke Alkemade and Birte Forstmann at the University of Amsterdam (Netherlands). My research focuses on 3D reconstructions of whole-brain vascular immunoreactivity and Alzheimer’s pathology. I integrate high-resolution post-mortem MRI with (immuno)histochemistry to create frameworks that capture both the broader anatomical context and the fine-scale vascular and pathological profiles across (sub)cortical structures.',
       avatar: 'LG',
-      photo: '/images/team/Lysanne.jpg',
+      photo: asset('/images/team/Lysanne.jpg'),
     },
     {
       id: 5,
@@ -157,7 +159,7 @@ const TeamPage = () => {
       introduction:
         'I am a PhD student working on human decision-making biases, such as spatial attention and decision priors. To this end, I combine structural and functional ultra-high field MRI with sequential sampling models.',
       avatar: 'EC',
-      photo: '/images/team/Ettore.png',
+      photo: asset('/images/team/Ettore.png'),
     },
     {
       id: 6,
@@ -166,7 +168,7 @@ const TeamPage = () => {
       introduction:
         'I am a technical assistant working with post-mortem data of subcortical nuclei in collaboration with Dick Swaab (Netherlands Institute for Neuroscience, Amsterdam, Netherlands).',
       avatar: 'RB',
-      photo: '/images/team/Rawien.jpg',
+      photo: asset('/images/team/Rawien.jpg'),
     },
   ]
 
